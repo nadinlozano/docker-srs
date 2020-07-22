@@ -13,4 +13,4 @@ RUN apt-get update && \
 RUN echo 'daemon off;' >> /data/install/srs/trunk/conf/srs.conf
 
 WORKDIR /data/install/srs/trunk
-CMD ["./objs/srs", "-c", "conf/http.flv.conf"]
+CMD ["./objs/srs", "-c", "conf/http.flv.live.conf"]
