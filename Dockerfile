@@ -10,7 +10,7 @@ RUN apt-get update && \
     apt-get remove -y --purge --auto-remove automake autoconf libtool build-essential wget ca-certificates unzip libpcre3-dev zlib1g-dev && \
     rm -rf /var/lib/apt/lists/*
     
-RUN echo 'daemon off;' >> /data/install/srs/trunk/conf/srs.conf
+RUN echo 'daemon off;' >> /data/install/srs/trunk/conf/http.flv.live.conf
 
 WORKDIR /data/install/srs/trunk
 CMD ["./objs/srs", "-c", "conf/http.flv.live.conf"]
